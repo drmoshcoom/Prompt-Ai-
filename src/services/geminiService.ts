@@ -7,7 +7,7 @@ const getAI = () => {
   return new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 };
 
-export const generateAndRefinePrompt = async (keywords: string[], addDetails: boolean, style?: string) => {
+export const refinePrompt = async (prompt: string, style?: string) => {
   const ai = getAI();
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash-lite",
