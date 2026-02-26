@@ -1,0 +1,7 @@
+{
+  "name": "PromptCraft AI",
+  "description": "An advanced AI-powered image prompt engineering platform for creators and freelancers.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
